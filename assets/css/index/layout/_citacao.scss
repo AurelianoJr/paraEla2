@@ -1,0 +1,48 @@
+%pseudo-elemento {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+}
+
+.citacao {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+    opacity: 0;
+
+    &__texto {
+        width: 50%;
+        position: relative;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 3rem;
+
+        &::after {
+            @extend %pseudo-elemento;
+            bottom: -1.4rem;
+            right: -3rem;
+            background: url("../../img/right-quotes-sign.svg") no-repeat center / contain;
+        }
+
+        &::before {
+            @extend %pseudo-elemento;
+            top: -2rem;
+            left: -5rem;
+            background: url("../../img/left-quotes-sign.svg") no-repeat center / contain;
+        }
+    }
+
+    &__autor {
+        margin-top: 8rem;
+    }
+}
+
+@keyframes animacao-citacao{
+    to{
+        opacity: 1;
+    }
+}

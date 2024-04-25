@@ -1,0 +1,9 @@
+@mixin animacao($delay) {
+    animation: teste 1s ease-in-out #{$delay}s forwards;
+}
+
+@keyframes teste {
+    to {
+        opacity: 1;
+    }
+}

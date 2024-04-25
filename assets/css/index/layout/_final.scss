@@ -1,0 +1,51 @@
+.final {
+    position: relative;
+    margin-top: 10rem;
+    padding: 20rem 0 10rem;
+    width: 100%;
+    background-color: #242038;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10rem;
+        background: url("../../img/waves.svg") no-repeat center / auto;
+    }
+
+    &__titulo {
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__paragrafo{
+        font-size: 1.5rem;
+        width: 50%;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 2.6rem;
+    }
+
+    &__link{
+        width: 30%;
+        margin-top: 5rem;
+        padding: 2rem;
+        background-color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+        transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+
+        &:hover{
+            background-color: #fe5f55;
+            color: #fff;
+        }
+    }
+}

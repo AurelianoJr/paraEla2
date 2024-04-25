@@ -1,0 +1,68 @@
+.area2 {
+    background-color: #fe5f55;
+    // height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .area2__titulo {
+        margin: 10rem 0;
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+.mensagem {
+    font-size: 2rem;
+    padding: 4rem 2rem 1rem;
+    background-color: #fff;
+    width: 30%;
+    padding: 4rem 2rem 1rem;
+    border-radius: 0.5rem;
+    color: #000;
+    position: relative;
+    margin-top: 2rem;
+
+    &--padding-pequeno{
+        padding-top: 2rem;
+    }
+
+    &--margin-grande {
+        margin-top: 5rem;
+    }
+
+    &__name {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        &--esquerda {
+            background: url("./../../img/img6.jpg") no-repeat center / contain;
+        }
+
+        &--direita {
+            background: url("./../../img/img5.jpg") no-repeat center / contain;
+        }
+    }
+
+    &__data {
+        font-size: 1.8rem;
+        display: block;
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &--direita {
+        margin-left: 40%;
+    }
+
+    &--esquerda {
+        margin-right: 40%;
+    }
+}

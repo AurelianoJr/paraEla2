@@ -1,0 +1,46 @@
+.sessao {
+    background-color: rgba(98, 0, 3, 0.678);
+    width: 100%;
+    height: 180vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titulo {
+        margin: 4rem 0;
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+
+        &-dif{
+            display: block;
+            font-size: 1.4rem;
+            margin-top: .5rem;
+            border-top: 1px solid #fff;
+            padding: 1rem;
+        }
+    }
+
+    &__lista {
+        width: 60%;
+    }
+
+    &__item {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        list-style: disc;
+    }
+
+    &__pergunta {
+        font-family: "Poppins", sans-serif;
+        // font-family: "Nunito Sans", sans-serif;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__resposta {
+        font-family: "Nunito Sans", sans-serif;
+    }
+}
